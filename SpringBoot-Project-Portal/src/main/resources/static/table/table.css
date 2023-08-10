@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+table {
+	font-family: "Lato", "sans-serif";
+margin: 30px 60px;
+margin-left:10px;
+}
+ /* added custom font-family  */
+table.one {
+	margin-bottom: 3em;
+	border-collapse: collapse;
+}
+td { /* removed the border from the table data rows  */
+	text-align:left;
+	width: 10em;
+	border-radius: 4px;
+  padding: 4px 12px;  
+}
+
+th { /* removed the border from the table heading row  */
+	text-align: center;
+	padding: 22px;
+	width: 100px;
+	background-color: #000;
+	/* added a red background color to the heading cells  */
+	color: white;
+} /* added a white font color to the heading text */
+tr {
+	height: 6px;
+}
+
+table tr:nth-child(even) { /* added all even rows a #eee color  */
+	background-color: #fff;
+}
+
+table tr:nth-child(odd) { /* added all odd rows a #fff color  */
+	background-color: #CECECE;
+}

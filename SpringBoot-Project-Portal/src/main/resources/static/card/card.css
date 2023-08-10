@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+* {
+  box-sizing: border-box;
+}
+body {
+margin: 0;
+}
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 42%;
+  padding: 10px;
+  box-shadow: 2px 0px 16px 4px #000;
+  height: 820px; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 820px; /* Should be removed. Only for demonstration */
+}
+
+.column1 details{
+font-size: 26px;
+margin: 50px;
+} 
+
+.card {
+	width: 450px;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+box-shadow: 16px 16px 32px #ccc, -16px -16px 32px #ccc;
+	overflow: hidden;
+transform: translate(50px, 10px);
+	
+	/* margin: 100px;  */
+}
+
+.card-header {
+	background-color: #333;
+	padding: 25px;
+	text-align: center;
+}
+
+.card-header .text-header {
+	margin: 0;
+	font-size: 35px;
+	font-family: monospace;
+	color: rgb(255, 255, 255);
+}
+
+.card-body {
+	background: linear-gradient(143deg, #EFE5E5 0%, #A6A3A3 27%, #B2ADAD 63%, #313030 100%);
+	padding: 26px;
+}
+
+.form-group {
+	margin-bottom: 16px;
+}
+
+.form-group label {
+	display: block;
+	font-size: 14px;
+	color: #010345;
+	font-family: monospace;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.form-group input[type="text"], .form-group input[type="email"],
+	.form-group input[type="password"],
+	.form-group select {
+	width: 98%;
+	padding:8px 22px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 12px;
+}
+.form-group input[type="checkbox"] {
+	transform: translate(2600%, -200%);
+	box-shadow: 0px 0px #fff;
+}
+input:focus{
+  outline: none;
+box-shadow: 5px 5px 5px  #001842;
+}

@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+.card {
+	margin: 30px 60px 0px 85px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 700px;
+	background: #e3e3e3;
+	box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
+	padding: 50px;
+	border-radius: 20px;
+	position: relative;
+}
+
+.title {
+  text-align: center;
+  margin: 0px 0px;
+	font-size: 30px;
+	color: royalblue;
+	font-weight: 600;
+	letter-spacing: 2px;
+	position: relative;;
+}

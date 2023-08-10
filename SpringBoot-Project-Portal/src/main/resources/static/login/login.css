@@ -1,0 +1,97 @@
+@charset "ISO-8859-1";
+.card {
+		opacity: 1;
+  margin:30px;
+	width: 420px;
+	border-radius: 35px;
+	box-shadow: 2px 5px 12px 3px #001842;
+	overflow: hidden;
+	box-sizing: content-box;
+animation: card-box 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+}
+
+.card-header {
+	background-color: #000;
+	padding: 35px;
+	text-align: center;
+}
+
+.card-header .text-header {
+
+	margin: 10px;
+	font-size: 35px;
+	font-family: monospace;
+	color: rgb(255, 255, 255);
+}
+
+.card-body {
+	background-color: #E1E1E1;
+	padding: 36px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group label {
+	display: block;
+	font-size: 16px;
+	color: #000;
+	font-family: monospace;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+
+.form-group input[type="text"], .form-group input[type="password"] {
+	width: 88%;
+	padding: 11px 20px;
+	font-size: 14px;
+	border: 2px solid #ccc;
+	border-radius: 14px;
+}
+
+.form-group input[type="checkbox"] {
+	transform: translate(2400%, -220%);
+	box-shadow: 0px 0px #fff;
+}
+input:focus{
+  outline: none;
+box-shadow: 5px 5px 5px  #001842;
+}
+p {
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+.btn {
+	padding: 12px 24px;
+	margin-left: 130px;
+	font-size: 14px;
+	border: none;
+	overflow: hidden;
+	border-radius: 15px;
+	background-color: #0F0243;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease-in-out;
+	cursor: pointer
+}
+
+.btn:hover {
+	background-color: #6D6D6D;
+	box-shadow: 1px 1px 12px 1px #fff;
+		 transform: scale(1.1);
+}
+@keyframes card-box {
+	0% {
+
+	transform: translate(1000px, 15%);
+	}
+
+	100% {
+
+	transform: translate(550px, 15%);
+	}
+}
