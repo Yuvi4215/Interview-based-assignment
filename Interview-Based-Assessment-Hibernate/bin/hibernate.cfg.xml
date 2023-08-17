@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+ 	<!-- As we are connecting MySQL, com.mysql.jdbc.Driver is required(JDBC 
+			driver class) -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<!-- Here the name of the database that we are connecting(JDBC URL) -->
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/yuvi</property>
+		<!-- Username to connect to MySQL -->
+		<property name="hibernate.connection.username">root</property>
+		<!-- Password to connect to MySQL, Provide your correct password -->
+		<property name="hibernate.connection.password">4215</property>
+
+
+
+		<!-- Dialect required between hibernate and MySQL -->
+		<!-- This property makes Hibernate generate the appropriate SQL for MySQL 
+			here -->
+		<!-- Prepare a Query based on the mapping information for the Underlying 
+			DATABASE -->
+	<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+<property name="hibernate.connection.pool_size">5</property>
+
+		<!-- Inform HIBERNATE to display the query on the console it has genrated 
+			Internally -->
+		<property name="hibernate.show_sql">true</property>
+		<!-- Inform HIBERNATE to display the query on the console it has generated 
+			Internally in proper format -->
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<!-- We need to provide the exact mapping file which we have created earlier -->
+
+
+    </session-factory>
+
+</hibernate-configuration>

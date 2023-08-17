@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Main configuration file -->
+<hibernate-configuration>
+	<session-factory>
+		<!-- As we are connecting MySQL, com.mysql.jdbc.Driver is required(JDBC 
+			driver class) -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<!-- Here the name of the database that we are connecting(JDBC URL) -->
+		<property name="hibernate.connection.url">jdbc:mysql:///yuvi</property>
+		<!-- Username to connect to MySQL -->
+		<property name="hibernate.connection.username">root</property>
+		<!-- Password to connect to MySQL, Provide your correct password -->
+		<property name="hibernate.connection.password">4215</property>
+
+
+
+		<!-- Dialect required between hibernate and MySQL -->
+		<!-- This property makes Hibernate generate the appropriate SQL for MySQL 
+			here -->
+		<!-- Prepare a Query based on the mapping information for the Underlying 
+			DATABASE -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<!-- Inform HIBERNATE to display the query on the console it has genrated 
+			Internally -->
+		<property name="hibernate.show_sql">true</property>
+		<!-- Inform HIBERNATE to display the query on the console it has generated 
+			Internally in proper format -->
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		
+		<!-- We need to provide the exact mapping file which we have created earlier -->
+		<property name="connection.provider_class">org.hibernate.hikaricp.internal.HikariCPConnectionProvider</property>
+		
+		<property name="hikari.connectionTimeout">50000</property>
+		<property name="hibernate.hikari.minimumIdle">10</property>
+		<property name="hibernate.hikari.maximumPoolSize">20</property>
+		<property name="hibernate.hikari.idleTimeout">30000</property>
+	</session-factory>
+</hibernate-configuration>
